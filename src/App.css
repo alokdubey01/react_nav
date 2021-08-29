@@ -1,0 +1,137 @@
+body{
+  background: #fff;
+}
+.navbar {
+  background-color: #ddd;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.navbar h2{
+  position: absolute;
+  text-align: center;
+  margin-left: 50%;
+  text-transform: uppercase;
+}
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+}
+.burger{
+  color: white;
+}
+
+.nav-menu {
+  background-color: #ddd;
+  width: 200px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: #ffffff;
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  color: white;
+  position: absolute;
+  left: 0;
+  margin-top: -1rem;
+  align-items: center;
+}
+.times{
+  color: white;
+}
+span {
+  margin-left: 16px;
+}
+.lists{
+  list-style: none;
+  margin-top: 4rem;
+  margin-left: -5rem;
+}
+.texts{
+  text-decoration: none;
+  color: #000;
+}
+.texts:hover{
+  color: #ffffff;
+}
+label,h1{
+  color: #fff;
+  mix-blend-mode: difference;
+}
+.container{
+  margin-left: 2rem;
+}
+@media screen and (min-width: 646px) {
+  .nav-menu {
+    background-color: #fff;
+    width: 200px;
+    height: 100vh;
+    box-shadow: 3px 1px 3px #ddd;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 850ms;
+  }
+  .burger{
+    display: none;
+  }
+  .texts:hover{
+    color: royalblue;
+  }
+  .navbar-toggle{
+    display: none;
+  }
+  .container{
+    margin-left: 15rem;
+  }
+  .nav-menu ul{
+    margin-top: -2rem;
+  }
+}
